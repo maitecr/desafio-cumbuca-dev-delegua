@@ -1,3 +1,4 @@
+//Função desenvolvida para inverter a ordem das palavras de um texto
 funcao inverter_palavras(texto) {
     var separar_palavras = texto.dividir(' ');
     var frase_invertida = "";

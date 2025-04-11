@@ -1,3 +1,4 @@
+//Função desenvolvida para substituição das letras informadas pelo usuário
 funcao substituir_letra(texto, original, substituta) {
     var texto_reformulado = "";
 
