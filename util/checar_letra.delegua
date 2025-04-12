@@ -1,0 +1,7 @@
+
+funcao checar_letra(texto, letra_original) {
+    enquanto (!(texto.inclui(letra_original))) {
+        letra_original = leia("Letra a ser alterada: ");
+    }
+    retorna letra_original;
+}

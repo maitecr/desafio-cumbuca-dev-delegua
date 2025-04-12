@@ -1,6 +1,8 @@
 var cl = importar('C:/Users/imloo/OneDrive/Área de Trabalho/Coding/desafio-cumbuca-dev-delegua/util/contagem_letras.delegua');
 var ip = importar('C:/Users/imloo/OneDrive/Área de Trabalho/Coding/desafio-cumbuca-dev-delegua/util/inverter_palavras.delegua');
 var sl = importar('C:/Users/imloo/OneDrive/Área de Trabalho/Coding/desafio-cumbuca-dev-delegua/util/substituir_letra.delegua');
+var ch = importar('C:/Users/imloo/OneDrive/Área de Trabalho/Coding/desafio-cumbuca-dev-delegua/util/checar_letra.delegua');
+
 
 //Função para execução do programa com as funções desenvolvidas no pacote util
 funcao brincando_com_texto() {
@@ -28,6 +30,7 @@ funcao brincando_com_texto() {
             escreva("Texto com palavras invertidas: ${palavras_invertidas}");
         caso '4':
             var letra_original = leia("Letra a ser alterada: ");
+            letra_original =ch.checar_letra(texto, letra_original);
             var letra_substituta = leia("Letra substituta: ");
             var texto_alterado = sl.substituir_letra(texto, letra_original, letra_substituta);
             escreva("Letra ${letra_original} substituída por ${letra_substituta}: ${texto_alterado}");
