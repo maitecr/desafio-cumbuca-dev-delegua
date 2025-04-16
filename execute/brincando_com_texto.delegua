@@ -30,12 +30,13 @@ funcao brincando_com_texto() {
             escreva("Texto com palavras invertidas: ${palavras_invertidas}");
         caso '4':
             var letra_original = leia("Letra a ser alterada: ");
-            letra_original =ch.checar_letra(texto, letra_original);
+            letra_original = ch.checar_letra(texto, letra_original);
             var letra_substituta = leia("Letra substituta: ");
             var texto_alterado = sl.substituir_letra(texto, letra_original, letra_substituta);
             escreva("Letra ${letra_original} substituída por ${letra_substituta}: ${texto_alterado}");
         padrao:
             escreva("Opção inválida");
     }
+    escreva("=================================================");
 }
 
